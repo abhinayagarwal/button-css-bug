@@ -1,0 +1,33 @@
+.root {
+    -background-disabled: rgba(0, 0, 0, .12);
+    -text-disabled-light: rgba(0, 0, 0, .7);
+    -text-disabled-dark:  rgba(255, 255, 255, .74);
+
+    -text-light: rgba(0, 0, 0, 0.87);
+    -text-dark: white;
+
+    -elevation-shadow-color: rgba(0, 0, 0, 0.3);
+    -elevation-z1: dropshadow(three-pass-box, -elevation-shadow-color, 2, 0, 0, 1);
+    -elevation-z2: dropshadow(three-pass-box, -elevation-shadow-color, 16, 0, 0, 7);
+
+    -primary-swatch-500: blue;
+}
+
+/*.button, .toggle-button {
+    -fx-font-weight: normal;
+    -fx-font-size: 1em;
+    -fx-background-radius: 0;
+    -fx-alignment: center;
+    -fx-effect: -elevation-z1;
+    -fx-background-color: -primary-swatch-500;
+    -fx-text-fill: ladder(-primary-swatch-500, -text-dark 49%, -text-light 50%);
+    -fx-min-width: 14.08mm;
+    -fx-min-height: 5.76mm;
+    -fx-padding: 1.92mm;
+}*/
+
+.button:disabled {
+    -fx-background-color: -background-disabled;
+    -fx-text-fill: ladder(-background-disabled, -text-disabled-light 49%, -text-disabled-dark 50%);
+    -fx-effect: null;
+}

@@ -1,0 +1,20 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+group 'com.gluonhq'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+    version = 12
+}
+
+mainClassName = 'sample.Main'
